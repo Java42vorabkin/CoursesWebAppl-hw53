@@ -7,7 +7,7 @@ public class CalculatorOperationPlus implements CalculatorOperation {
 
 	@Override
 	public double calculate(double operands[]) {
-		
+		CalculatorOperation.checkOperandsNumber(operands, 2);
 		return operands[0] + operands[1];
 	}
 
